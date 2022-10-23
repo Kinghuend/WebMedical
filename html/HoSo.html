@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style_hoso.css" />
+</head>
+
+<body>
+    <div>
+        <!--Bắt Đầu Navigation -->
+        <nav>
+            <div class="brand">
+                <h2>Medical Handbook Examination</h2>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="home" aria-hidden="true"></i>Trang Chủ</a></li>
+                <li style="box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);"><a href="HoSo.html"><i class="document" aria-hidden="true"></i>Hồ
+                        sơ</a></li>
+                <li><a href="DonThuoc.html"><i class="prescription" aria-hidden="true"></i>Đơn Thuốc</a></li>
+                <li><a href="LichKham.html"><i class="schedule" aria-hidden="true"></i>Lịch Khám</a></li>
+                <!-- <li><a href="LaySo.html"><i class="number" aria-hidden="true"></i>Lấy số thứ tự</a></li> -->
+                <li><a href="ThongTinBacSi.html"><i class="doctor" aria-hidden="true"></i>Bác sĩ</a></li>
+                <li><a href=""><i class="logIn" aria-hidden="true"></i>Đăng Nhập</a></li>
+            </ul>
+        </nav>
+        <!--Kết Thúc Navigation -->
+    </div>
+    <div class="main">
+        <div class="main_left">
+            <!-- <ul>
+                <li style="box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);"><a href="HoSoBenhLy.html"><i class="document" aria-hidden="true"></i>Hồ sơ bệnh lý</a></li>
+                <li><a href="TheBaoHiem.html"><i class="prescription" aria-hidden="true"></i>Thẻ bảo hiểm</a></li>
+                <li><a href="ChupCT.html"><i class="schedule" aria-hidden="true"></i>Chụp CT</a></li>
+            </ul> -->
+            <ul>
+                <li><a class="active" href="#HoSoBenhLy">Hồ sơ bệnh lý</a></li>
+                <li><a href="#TheBaoHiem">Thẻ bảo hiểm</a></li>
+                <li><a href="#CT">Chụp CT</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div class="content">
+
+            <div id="primaryContent">
+                <h2 id="contactUs">Hồ sơ bệnh lý</h2>
+
+                <form action="contact.html" method="get" accept-charset="utf-8">
+                    <img src="/img/people.png" style="height:50%;width: 50%;border-style: solid;border-width: 2px;"><br>
+                    <div class="form_main">
+                        <div class="form_infor">
+                            <label for="id">Id: </label>
+                            <input type="text" name="id" value="" id="id" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="name">Họ và tên: </label>
+                            <input type="text" name="name" value="" id="name" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="age">Tuổi: </label>
+                            <input type="text" name="age" value="" id="age" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="Date_of_birth">Ngày sinh: </label>
+                            <input type="text" name="Date_of_birth" value="" id="Date_of_birth" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="cmnd_cccd">Số CMND/CCCD: </label>
+                            <input type="text" name="cmnd_cccd" value="" id="cmnd_cccd" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="insurance_code">Mã bảo hiểm: </label>
+                            <input type="text" name="insurance_code" value="" id="insurance_code" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="sex">Giới tính: </label>
+                            <input type="text" name="sex" value="" id="sex" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" value="" id="email" /><br>
+                        </div>
+                        <div class="form_infor">
+                            <label for="phone">Phone: </label>
+                            <input type="text" name="phone" value="" id="phone" /><br>
+                        </div>
+
+                    </div>
+                    <div class="img_info">
+                        <label for="info">Info: </label>
+                        <textarea name="info" id="info" rows="30" cols="100"></textarea>
+                    </div>
+
+                </form>
+
+            </div>
+            <!--end primaryContent-->
+
+        </div><!-- end content-->
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Lorem ipsumdolor sit...</p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook"></i><img src="/img/facebook.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                    <li><a href=""><i class="fa fa-google"></i><img src="/img/gmail.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i><img src="/img/youtube.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i><img src="/img/Instagram.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <form class="form">
+                            <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+    </footer>
+
+</body>
+
+</html>

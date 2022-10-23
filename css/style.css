@@ -1,0 +1,347 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    /* display: flex; */
+    justify-content: flex-end;
+    /* align-items: center; */
+    /* min-height: 100vh; */
+    /* flex-direction: column; */
+    /* background: url(https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/tao_footer_cho_website/Aare.svg); */
+}
+
+nav{
+    margin-bottom: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.4);
+    padding: 0 100px ;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+    background: url(https://www.toptal.com/designers/subtlepatterns/uploads/restaurant.png) ;
+}
+nav .brand{
+    float: left;
+    height: 100%;
+    line-height: 80px;
+}
+nav .brand h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+nav ul{
+    float: right;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s
+}
+nav ul li a:before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #fff;
+     transform-origin: right;
+     z-index: -1;
+     transform: scaleX(0);
+     transition:  transform 0.5s;
+ }
+nav ul li a:hover:before{
+     transform-origin: left;
+     transform: scaleX(1);
+ }
+nav ul li a:hover{
+     color: #262626;
+ }
+
+
+ /*content*/
+ .content{
+    margin-top: 80px;
+    padding: 20px;
+    float: none;   
+}
+
+.ban-tin{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* grid-column-gap:10px ; */
+    grid-row-gap: 10px;
+}
+.ban-tin div{
+    border-style:solid ;
+    border-width: 1px;
+    background-color: rgb(120, 218, 223);
+}
+.ban-tin .anh-bantin{
+    width: 100%;
+}
+
+
+/* #content {
+    padding: 0 36px 100px 347px;
+    overflow: hidden;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+} */
+
+/* #content #primaryContent {
+    padding-top: 2em;
+    float: left;
+    width: 334px;
+}
+#recentWork ol li.chosen a,
+div.image_display {
+    padding: 11px;
+    border: 1px solid #d6cec9;
+    background: white;
+}
+
+.image_display img {
+    border: 1px solid #d6cec9;
+    
+}
+#recentWork ol{
+    list-style: none;
+    text-align: center;
+    float: right;
+
+    
+} */
+
+
+
+ /* footer */
+ /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+} */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    background: #111;
+    /* display: flex; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*Thiết Lập Cho Thành Phần Nội Dung Giới Thiệu*/
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social-icon li a:hover{
+    background: #f00;
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top:16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+.btn--primary:hover {
+    background: #f00;
+}
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.form__field {
+    width: 90%;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
+
+/* @media  (max-width: 768px){
+    footer{
+        padding: 40px;
+             }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+} */

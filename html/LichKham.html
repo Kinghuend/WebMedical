@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style_lich.css" />
+</head>
+
+<body>
+    <!--Bắt Đầu Navigation -->
+    <nav>
+        <div class="brand">
+            <h2>Medical Handbook Examination</h2>
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="home" aria-hidden="true"></i>Trang Chủ</a></li>
+            <li><a href="HoSo.html"><i class="document" aria-hidden="true"></i>Hồ sơ</a></li>
+            <li><a href="DonThuoc.html"><i class="prescription" aria-hidden="true"></i>Đơn Thuốc</a></li>
+            <li style="box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+        0 2px 2px rgba(0,0,0,0.12),
+        0 4px 4px rgba(0,0,0,0.12),
+        0 8px 8px rgba(0,0,0,0.12),
+        0 16px 16px rgba(0,0,0,0.12);"><a href="LichKham.html"><i class="schedule" aria-hidden="true"></i>Lịch Khám</a>
+            </li>
+            <!-- <li><a href="LaySo.html"><i class="number" aria-hidden="true"></i>Lấy số thứ tự</a></li> -->
+            <li><a href="ThongTinBacSi.html"><i class="doctor" aria-hidden="true"></i>Bác sĩ</a></li>
+            <li><a href=""><i class="logIn" aria-hidden="true"></i>Đăng Nhập</a></li>
+        </ul>
+    </nav>
+    <!--Kết Thúc Navigation -->
+    <br>
+    <div class="content">
+
+        <div class="calendar">
+            <div class="header">
+                <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+                <div class="text" data-render="month-year"></div>
+                <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+            </div>
+            <div class="months" data-flow="left">
+                <div class="month month-a">
+                    <div class="render render-a"></div>
+                </div>
+                <div class="month month-b">
+                    <div class="render render-b"></div>
+                </div>
+            </div>
+            <script src="/javascript.js"></script>
+        </div>
+
+        <div class="note">
+            <h2>NOTE</h2>
+            <div class="grid-container" style="background-color:aliceblue ;">
+                <div>
+                    <label for="time">Thời gian: </label> 
+                </div>
+                <div>
+                    <select id="time" name="time" style="width:100%;">
+                        <optgroup label="Sáng:">
+                            <option value="7">7 giờ</option>
+                            <option value="8">8 giờ</option>
+                            <option value="9">9 giờ</option>
+                            <option value="10">10 giờ</option>
+                            <option value="11">11 giờ</option>
+                            <option value="12">12 giờ</option>
+                        </optgroup>
+                        <optgroup label="Chiều">
+                            <option value="7">7 giờ</option>
+                            <option value="8">8 giờ</option>
+                            <option value="9">9 giờ</option>
+                            <option value="10">10 giờ</option>
+                            <option value="11">11 giờ</option>
+                            <option value="12">12 giờ</option>
+                        </optgroup>
+                    </select><br>
+                </div>
+                <div>
+                    <label for="where">Địa điểm: </label>                    
+                </div>
+                <div>
+                    <select id="where" name="where" style="width:100%;>
+                        <optgroup label="Bệnh viện công:">
+                            <option value="1">Bệnh viện Đà Nẵng</option>
+                            <option value="2">Bệnh viện C</option>
+                            <option value="3">Bệnh viện C17</option>
+                            <option value="4">Bệnh viện 199</option>
+                        </optgroup>
+                        <optgroup label="Bệnh viện tư">
+                            <option value="7">Bệnh viện Hoàn Mỹ Đà Nẵng</option>
+                            <option value="8">Bệnh viện Đa khoa vĩnh Toàn</option>
+                            <option value="9">Bệnh viện Bình dân Đà Nẵng</option>
+                            <option value="10">Bệnh viện Đa khoa Tâm Trí Đà Nẵng</option>
+                        </optgroup>
+                    </select><br>
+                </div>
+                <div>
+                    <label for="department">Khoa: </label>
+                </div>
+                <div>
+                    <select id="department" name="department" style="width:100%;>
+                        <optgroup label="Nội khoa:">
+                            <option value="1">Khoa Nhi</option>
+                            <option value="2">Khoa Răng Hàm Mặt</option>
+                            <option value="3">Khoa Tim Mạch</option>
+                            <option value="4">Khoa Hô Hấp</option>
+                            <option value="5">Khoa Gan - Tiêu Hóa</option>
+                            <option value="6">Khoa Mắt</option>
+                            <option value="7">Khoa Tai Mũi Họng</option>
+                        </optgroup>
+                        <optgroup label="Ngoại khoa">
+                            <option value="8">Bệnh viện Hoàn Mỹ Đà Nẵng</option>
+                            <option value="9">Bệnh viện Đa khoa vĩnh Toàn</option>
+                            <option value="10">Bệnh viện Bình dân Đà Nẵng</option>
+                            <option value="11">Bệnh viện Đa khoa Tâm Trí Đà Nẵng</option>
+                        </optgroup>
+                    </select><br>
+                </div>
+                <div>
+                    <label for="doctor">Bác sĩ: </label>                    
+                </div>
+                <div>
+                    <select id="doctor" name="doctor" style="width:100%;>
+                        <option value="1">Nguyễn Văn A</option>
+                        <option value="2">Trần Minh B</option>
+                        <option value="3">Ngô Đình C</option>
+                    </select><br>
+                    <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Bắt đầu footer -->
+    <footer>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Lorem ipsumdolor sit...</p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook"></i><img src="/img/facebook.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                    <li><a href=""><i class="fa fa-google"></i><img src="/img/gmail.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i><img src="/img/youtube.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i><img src="/img/Instagram.png" alt=""
+                                style="height: 40px;width: 40px;"></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <form class="form">
+                            <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+    </footer>
+
+</body>
+
+</html>
